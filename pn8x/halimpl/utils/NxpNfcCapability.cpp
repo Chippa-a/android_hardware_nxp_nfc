@@ -87,6 +87,10 @@ tNFC_chipType capability::getChipType(uint8_t* msg, uint16_t msg_len) {
           chipType = pn67T;
           break;
 
+        case 0x01:  // NQ110, NQ120
+          chipType = pn547C2;
+          break;
+
         case 0x28:
         case 0x48:  // NQ210
           chipType = pn548C2;
